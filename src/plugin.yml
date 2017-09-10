@@ -1,0 +1,7 @@
+name: IFLR-WebMapLink
+main: xyz.interflare.webmaplink.WebMapLink
+version: 0.1
+commands:
+    maplink:
+        description: Get a link to the web map, centred at your location
+        usage: /maplink
