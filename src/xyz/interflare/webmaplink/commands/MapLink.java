@@ -24,7 +24,7 @@ public class MapLink implements CommandExecutor {
             
             String msg = "Click to open the web map!";
             String link = String.format(_urlFormat,
-                    l.getWorld().getName(),
+                l.getWorld().getName(),
                 l.getBlockX(), l.getBlockY(), l.getBlockZ());
             String rawMsg = String.format("{\"text\":\"[\",\"color\":\"dark_gray\",\"extra\":"
                         + "[{\"text\":\"MapLink\",\"color\":\"aqua\",\"bold\":true},"
@@ -36,7 +36,7 @@ public class MapLink implements CommandExecutor {
                             + "\"Click to browse to: %s\"]}}", msg, link, _urlHost);
             
            Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(),
-                String.format("tellraw %s %s", p.getDisplayName(), rawMsg));
+                String.format("tellraw %s %s", p.getName(), rawMsg));
         }
         
         return true;
