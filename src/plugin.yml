@@ -1,6 +1,6 @@
 name: MapLink
 main: xyz.interflare.webmaplink.WebMapLink
-version: 1.0
+version: 1.1
 commands:
     maplink:
         description: Get a link to the web map, centred at your location

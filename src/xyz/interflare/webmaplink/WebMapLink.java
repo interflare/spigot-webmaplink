@@ -11,7 +11,7 @@ import xyz.interflare.webmaplink.commands.MapLink;
 
 /**
  * @author InterFlare
- * @version 1.0
+ * @version 1.1
  */
 public class WebMapLink extends JavaPlugin {
     private final Logger _logger = Logger.getLogger("Minecraft");
@@ -22,12 +22,12 @@ public class WebMapLink extends JavaPlugin {
             
         // Register configuration
         FileConfiguration config = getConfig();
-        config.addDefault("configVersion", 1.0);
+        config.addDefault("configVersion", 1.1);
         config.addDefault("urlFormat", "http://dynmap.myserver.com:8123/?mapname=surface&zoom=8&worldname=%s&x=%d&y=%d&z=%d");
         config.options().copyDefaults(true);
         saveConfig();
         
-        if (config.getDouble("configVersion") != 1.0) {
+        if (config.getDouble("configVersion") != 1.1) {
             _logger.info("[MapLink] Version mismatch between config and plugin, consider re-generating the file.");
         }
         
