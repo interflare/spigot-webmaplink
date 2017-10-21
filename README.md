@@ -1,7 +1,7 @@
 # webmaplink
 SpigotMC plugin to get a clickable link in the players' chat to a dynmap instance based on where the player is (world name and x/y/z coords).
 
-[Download the plugin &raquo;](https://edx.click/NGh9Exa)
+[Download the plugin &raquo;](https://github.com/interflare/webmaplink/releases)
 
 ## Usage Example
 
